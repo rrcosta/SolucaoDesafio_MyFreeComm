@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @purchaser.name %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @purchaser.count %>
+</p>
+
+<%= link_to 'Edit', edit_purchaser_path(@purchaser) %> |
+<%= link_to 'Back', purchasers_path %>

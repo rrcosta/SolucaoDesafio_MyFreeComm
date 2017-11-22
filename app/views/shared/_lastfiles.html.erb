@@ -1,0 +1,19 @@
+<div>
+  Nome dos últimos arquivos importados:
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lastfiles.each do |file| %>
+      <tr>
+        <td><%= file.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

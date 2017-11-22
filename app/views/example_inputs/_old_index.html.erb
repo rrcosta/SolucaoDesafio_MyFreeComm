@@ -1,0 +1,35 @@
+
+
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>Purchasername</th>
+      <th>Itemdescription</th>
+      <th>Itemprice</th>
+      <th>Purchasecount</th>
+      <th>Merchantaddress</th>
+      <th>Merchantname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @example_inputs.each do |example_input| %>
+      <tr>
+        <td><%= example_input.purchasername %></td>
+        <td><%= example_input.itemdescription %></td>
+        <td><%= example_input.itemprice %></td>
+        <td><%= example_input.purchasecount %></td>
+        <td><%= example_input.merchantaddress %></td>
+        <td><%= example_input.merchantname %></td>
+        <td><%= link_to 'Show', example_input %></td>
+        <td><%= link_to 'Edit', edit_example_input_path(example_input) %></td>
+        <td><%= link_to 'Destroy', example_input, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Example Input', new_example_input_path %>
+-->

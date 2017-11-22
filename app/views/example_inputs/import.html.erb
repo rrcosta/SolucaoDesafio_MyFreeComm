@@ -1,0 +1,22 @@
+<h1>Receita Bruta do Arquivo</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome do arquivo</th>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @revenues.each do |revenue| %>
+      <tr>
+        <td><%= revenue.name %></td>
+        <td><%= revenue.value %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

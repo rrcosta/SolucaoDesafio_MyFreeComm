@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h3><center>
+  Receita Bruta do Arquivo
+</center></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome do arquivo</th>
+      <th>Valor</th>
+      <th>Data e Horario processado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @revenues.each do |revenue| %>
+      <tr>
+        <td><%= revenue.name %></td>
+        <td><%= revenue.value %></td>
+        <td><%= revenue.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Inserir Novo Arquivo', example_inputs_path %>

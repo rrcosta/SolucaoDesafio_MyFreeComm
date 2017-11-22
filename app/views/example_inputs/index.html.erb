@@ -1,0 +1,15 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<div>
+  <h4>.: Importar Arquivo :. </h4>
+
+  <div class="input-field col s12">
+    <%= form_tag import_example_inputs_path, multipart: true do %>
+      <%= file_field_tag :file %><br /><br />
+      <%= submit_tag "Importar arquivo" %><br />
+      <br />
+    <% end %>
+  </div>
+</div>
