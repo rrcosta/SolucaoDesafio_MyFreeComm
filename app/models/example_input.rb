@@ -11,12 +11,15 @@ class ExampleInput < ApplicationRecord
     unless file.nil?
       @valreceita = 0
       CSV.foreach(file.path , headers: true ) do |row|
-        saveInformation(row)
-        calcReceita(row[2], row[3])
+        contline = row[0].split("\t")
+
+        saveInformation(contline)
+        calcReceita(contline[2], contline[3])
       end
+
       saveRevenues(@valreceita, file.original_filename)
     end
-  end
+end
 
   private
   def self.saveInformation(contentLine)
