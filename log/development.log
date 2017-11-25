@@ -4545,3 +4545,79 @@ Processing by RevenuesController#index as HTML
 Completed 200 OK in 131ms (Views: 128.3ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-24 14:44:23 -0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Rendered example_inputs/index.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 652ms (Views: 637.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/example_inputs/import" for 127.0.0.1 at 2017-11-24 14:44:34 -0200
+Processing by ExampleInputsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1k9ESE5eGO0wsBYJvrrzR1pNulXejsyYvBOj/wJ1Yz1kuzzMQbDpaJ4eq6RxuCum6Gqpi8lrzLtHRbasJ1323A==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f63fd855dc8 @tempfile=#<Tempfile:/tmp/RackMultipart20171124-32478-1subvu0.csv>, @original_filename="example_input.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Importar arquivo"}
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "João Silva"], ["itemdescription", "R$10 off R$20 of food"], ["itemprice", 10.0], ["purchasecount", 2], ["merchantaddress", "987 Fake St"], ["merchantname", "Bob's Pizza"], ["created_at", "2017-11-24 16:44:34.563422"], ["updated_at", "2017-11-24 16:44:34.563422"]]
+  [1m[35m (22.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "items" ("description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "R$10 off R$20 of food"], ["price", 10.0], ["created_at", "2017-11-24 16:44:34.613066"], ["updated_at", "2017-11-24 16:44:34.613066"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "purchasers" ("name", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "João Silva"], ["count", 2], ["created_at", "2017-11-24 16:44:34.645869"], ["updated_at", "2017-11-24 16:44:34.645869"]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "merchants" ("address", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["address", "987 Fake St"], ["name", "Bob's Pizza"], ["created_at", "2017-11-24 16:44:34.681571"], ["updated_at", "2017-11-24 16:44:34.681571"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Amy Pond"], ["itemdescription", "R$30 of awesome for R$10"], ["itemprice", 10.0], ["purchasecount", 5], ["merchantaddress", "456 Unreal Rd"], ["merchantname", "Tom's Awesome Shop"], ["created_at", "2017-11-24 16:44:34.692950"], ["updated_at", "2017-11-24 16:44:34.692950"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "items" ("description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "R$30 of awesome for R$10"], ["price", 10.0], ["created_at", "2017-11-24 16:44:34.706279"], ["updated_at", "2017-11-24 16:44:34.706279"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "purchasers" ("name", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Amy Pond"], ["count", 5], ["created_at", "2017-11-24 16:44:34.714946"], ["updated_at", "2017-11-24 16:44:34.714946"]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "merchants" ("address", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["address", "456 Unreal Rd"], ["name", "Tom's Awesome Shop"], ["created_at", "2017-11-24 16:44:34.725803"], ["updated_at", "2017-11-24 16:44:34.725803"]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Marty McFly"], ["itemdescription", "R$20 Sneakers for R$5"], ["itemprice", 5.0], ["purchasecount", 1], ["merchantaddress", "123 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-24 16:44:34.739904"], ["updated_at", "2017-11-24 16:44:34.739904"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "items" ("description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "R$20 Sneakers for R$5"], ["price", 5.0], ["created_at", "2017-11-24 16:44:34.748571"], ["updated_at", "2017-11-24 16:44:34.748571"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "purchasers" ("name", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Marty McFly"], ["count", 1], ["created_at", "2017-11-24 16:44:34.758979"], ["updated_at", "2017-11-24 16:44:34.758979"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "merchants" ("address", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["address", "123 Fake St"], ["name", "Sneaker Store Emporium"], ["created_at", "2017-11-24 16:44:34.769896"], ["updated_at", "2017-11-24 16:44:34.769896"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$20 Sneakers for R$5"], ["itemprice", 5.0], ["purchasecount", 4], ["merchantaddress", "123 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-24 16:44:34.781121"], ["updated_at", "2017-11-24 16:44:34.781121"]]
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "items" ("description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "R$20 Sneakers for R$5"], ["price", 5.0], ["created_at", "2017-11-24 16:44:34.792585"], ["updated_at", "2017-11-24 16:44:34.792585"]]
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "purchasers" ("name", "count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Snake Plissken"], ["count", 4], ["created_at", "2017-11-24 16:44:34.803780"], ["updated_at", "2017-11-24 16:44:34.803780"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "merchants" ("address", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["address", "123 Fake St"], ["name", "Sneaker Store Emporium"], ["created_at", "2017-11-24 16:44:34.814816"], ["updated_at", "2017-11-24 16:44:34.814816"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "revenues" ("name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "example_input.csv"], ["value", 95.0], ["created_at", "2017-11-24 16:44:34.846114"], ["updated_at", "2017-11-24 16:44:34.846114"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/revenues
+Completed 302 Found in 351ms (ActiveRecord: 198.8ms)
+
+
+Started GET "/revenues" for 127.0.0.1 at 2017-11-24 14:44:34 -0200
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  [1m[36mRevenue Load (0.7ms)[0m  [1m[34mSELECT "revenues".* FROM "revenues" ORDER BY created_at DESC[0m
+  Rendered revenues/index.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 157ms (Views: 154.0ms | ActiveRecord: 0.7ms)
+
+
