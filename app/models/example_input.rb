@@ -1,10 +1,13 @@
 class ExampleInput < ApplicationRecord
-  #validates :formatFile
-
   @valreceita = 0  
+
   def self.formatFile(file)
     unless file.nil?
-      file.content_type.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
+      unless file.content_type.nil?
+        file.content_type.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
+      else
+        file.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
+      end
     end
   end
 
@@ -72,5 +75,4 @@ class ExampleInput < ApplicationRecord
       revenue[:value] = val
     revenue.save
   end
-
 end

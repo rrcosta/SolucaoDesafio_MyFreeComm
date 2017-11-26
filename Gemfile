@@ -8,7 +8,6 @@ end
 gem 'jquery-rails'
 gem 'materialize-sass'
 gem 'material_icons'
-gem 'simplecov', require: false, group: :test
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -46,6 +45,9 @@ group :development, :test do
   gem 'rspec-rails'
   # Create progressbar for rspec-rails in terminal
   gem 'fuubar'  
+  gem 'simplecov', require: false, group: :test
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do

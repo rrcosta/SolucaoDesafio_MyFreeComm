@@ -17,7 +17,17 @@ RSpec.describe ExampleInputsController, type: :controller do
                                             merchantaddress: "171 Fake St",
                                             merchantname: "Sneaker Store Emporium")
       get :show , params: { id: example_input.to_param }
-      expect(response).to be_success      
+      expect(response).to be_success
     end
   end
+
+  context "DELETE #destroy " do
+    it 'returns a sucess response' do
+      #example_input = ExampleInput.first
+      #delete :destroy, id: example_input
+      #expect(response).to render_template('index')
+      #delete :destroy , id:
+    end
+  end
+  
 end
