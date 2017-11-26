@@ -13,7 +13,7 @@ class ExampleInputsController < ApplicationController
   end
 
   def import
-      if ExampleInput.formatoArquivo( params[:file] )
+      if ExampleInput.formatFile( params[:file] )
         ExampleInput.import( params[:file] )
 
         redirect_to revenues_path , notice: "Importação executada com sucesso! ;)"

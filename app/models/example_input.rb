@@ -1,7 +1,8 @@
 class ExampleInput < ApplicationRecord
-  @valreceita = 0
+  #validates :formatFile
 
-  def self.formatoArquivo(file)
+  @valreceita = 0  
+  def self.formatFile(file)
     unless file.nil?
       file.content_type.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
     end
@@ -19,7 +20,7 @@ class ExampleInput < ApplicationRecord
 
       saveRevenues(@valreceita, file.original_filename)
     end
-end
+  end
 
   private
   def self.saveInformation(contentLine)
