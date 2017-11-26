@@ -10,7 +10,7 @@ RSpec.describe ExampleInputsController, type: :controller do
 
   context "GET #show" do
     it 'returns a sucess response' do
-      example_input = ExampleInput.create!(purchasername: "Snake Plissken",
+      example_input = ExampleInput.create!( purchasername: "Snake Plissken",
                                             itemdescription: "R$35 Sneakers for R$3",
                                             itemprice: '3',
                                             purchasecount: '4',

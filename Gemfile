@@ -8,7 +8,7 @@ end
 gem 'jquery-rails'
 gem 'materialize-sass'
 gem 'material_icons'
-
+gem 'simplecov', require: false, group: :test
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
