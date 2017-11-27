@@ -24,16 +24,6 @@
         1,
         null,
         null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/home/rafael/projetos/desafios/implement_test/SolucaoDesafio_MyFreeComm/spec/rails_helper.rb": [
@@ -236,7 +226,6 @@
         1,
         null,
         null,
-        null,
         1,
         1,
         1,
@@ -244,7 +233,6 @@
         1,
         1,
         1,
-        null,
         null,
         null
       ],
@@ -581,7 +569,6 @@
         1,
         1,
         null,
-        null,
         1,
         1,
         1,
@@ -595,7 +582,6 @@
         1,
         1,
         1,
-        null,
         null,
         null,
         null,
@@ -606,6 +592,6 @@
         null
       ]
     },
-    "timestamp": 1511756282
+    "timestamp": 1511789131
   }
 }
