@@ -6,8 +6,8 @@ require 'rspec/rails'
 require 'factory_bot'
 
 #Load for files *.rb in support folder
-Dir[Rails.root.join('spec/support/**/*.rb')].each do |file|
-  require file
+Dir[Rails.root.join('spec/support/**/*.rb')].each do |arq|
+  require arq
 end
 
 ActiveRecord::Migration.maintain_test_schema!

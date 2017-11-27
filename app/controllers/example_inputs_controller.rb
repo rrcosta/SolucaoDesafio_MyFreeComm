@@ -14,9 +14,11 @@ class ExampleInputsController < ApplicationController
 
   def import
       if ExampleInput.formatFile( params[:file] )
-        ExampleInput.import( params[:file] )
-
-        redirect_to revenues_path , notice: "Importação executada com sucesso! ;)"
+        if ExampleInput.import( params[:file] )
+          redirect_to revenues_path , notice: "Importação executada com sucesso! ;)"
+        else
+          redirect_to root_url , notice: "Arquivo CSV inválido"
+        end
       else
         redirect_to root_url , notice: "Arquivo inválido. Favor escolher um arquivo CSV"
       end

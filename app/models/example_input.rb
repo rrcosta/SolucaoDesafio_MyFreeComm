@@ -2,25 +2,25 @@ class ExampleInput < ApplicationRecord
   @valreceita = 0  
 
   def self.formatFile(file)
+    return true if file.class == Symbol
+    
     unless file.nil?
-      unless file.content_type.nil?
+      if file.class == ActionDispatch::Http::UploadedFile
         file.content_type.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
-      else
-        file.split('/').last == "CSV" || file.content_type.split('/').last == "csv" ? true : false
       end
     end
   end
 
   def self.import(file)
+    return false if file.class == Symbol
+
     unless file.nil?
       @valreceita = 0
       CSV.foreach(file.path , headers: true ) do |row|
         contline = row[0].split("\t")
-
         saveInformation(contline)
         calcReceita(contline[2], contline[3])
       end
-
       saveRevenues(@valreceita, file.original_filename)
     end
   end

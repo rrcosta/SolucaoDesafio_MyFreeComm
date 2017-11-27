@@ -591,3 +591,1614 @@ Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 0.8ms)
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-26 23:48:15.181001"], ["updated_at", "2017-11-26 23:48:15.181001"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mExampleInput Load (0.4ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-26 23:48:49.317462"], ["updated_at", "2017-11-26 23:48:49.317462"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-26 23:54:25.051885"], ["updated_at", "2017-11-26 23:54:25.051885"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mExampleInput Load (0.4ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-26 23:54:57.806762"], ["updated_at", "2017-11-26 23:54:57.806762"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-26 23:55:18.109302"], ["updated_at", "2017-11-26 23:55:18.109302"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mExampleInput Load (0.4ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:04:36.721321"], ["updated_at", "2017-11-27 00:04:36.721321"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:05:12.858187"], ["updated_at", "2017-11-27 00:05:12.858187"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:06:49.055391"], ["updated_at", "2017-11-27 00:06:49.055391"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:07:23.722233"], ["updated_at", "2017-11-27 00:07:23.722233"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:07:46.400126"], ["updated_at", "2017-11-27 00:07:46.400126"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:12:45.283909"], ["updated_at", "2017-11-27 00:12:45.283909"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:13:40.477267"], ["updated_at", "2017-11-27 00:13:40.477267"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mExampleInput Load (0.4ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:15:55.148975"], ["updated_at", "2017-11-27 00:15:55.148975"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:22:08.338425"], ["updated_at", "2017-11-27 00:22:08.338425"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 1.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:23:19.365677"], ["updated_at", "2017-11-27 00:23:19.365677"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:24:06.619121"], ["updated_at", "2017-11-27 00:24:06.619121"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"57"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:27:34.601403"], ["updated_at", "2017-11-27 00:27:34.601403"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"58"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:28:05.121065"], ["updated_at", "2017-11-27 00:28:05.121065"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (9.7ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:31:14.716416"], ["updated_at", "2017-11-27 00:31:14.716416"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"60"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:50:26.395183"], ["updated_at", "2017-11-27 00:50:26.395183"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mExampleInput Load (0.4ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:51:04.218802"], ["updated_at", "2017-11-27 00:51:04.218802"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"62"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 00:51:34.687898"], ["updated_at", "2017-11-27 00:51:34.687898"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (1.7ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:05:14.411759"], ["updated_at", "2017-11-27 01:05:14.411759"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 2.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (1.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:06:32.207835"], ["updated_at", "2017-11-27 01:06:32.207835"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:15:39.447421"], ["updated_at", "2017-11-27 01:15:39.447421"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:16:21.275546"], ["updated_at", "2017-11-27 01:16:21.275546"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mExampleInput Load (0.7ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (2.0ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:19:20.426010"], ["updated_at", "2017-11-27 01:19:20.426010"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mExampleInput Load (0.7ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:30:12.702444"], ["updated_at", "2017-11-27 01:30:12.702444"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mExampleInput Load (1.0ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:41:35.130919"], ["updated_at", "2017-11-27 01:41:35.130919"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:50:12.507519"], ["updated_at", "2017-11-27 01:50:12.507519"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:55:18.936389"], ["updated_at", "2017-11-27 01:55:18.936389"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:56:51.262177"], ["updated_at", "2017-11-27 01:56:51.262177"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:57:21.202439"], ["updated_at", "2017-11-27 01:57:21.202439"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 01:58:24.847186"], ["updated_at", "2017-11-27 01:58:24.847186"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:27:50.068641"], ["updated_at", "2017-11-27 02:27:50.068641"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mExampleInput Load (0.8ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:30:12.653374"], ["updated_at", "2017-11-27 02:30:12.653374"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:33:41.338411"], ["updated_at", "2017-11-27 02:33:41.338411"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mExampleInput Load (1.2ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:38:28.499629"], ["updated_at", "2017-11-27 02:38:28.499629"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mExampleInput Load (0.8ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:39:50.714493"], ["updated_at", "2017-11-27 02:39:50.714493"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:43:30.273657"], ["updated_at", "2017-11-27 02:43:30.273657"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:43:56.077011"], ["updated_at", "2017-11-27 02:43:56.077011"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"82"}
+  [1m[36mExampleInput Load (3.0ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 3.5ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 02:45:19.432503"], ["updated_at", "2017-11-27 02:45:19.432503"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"83"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.7ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:13:45.177345"], ["updated_at", "2017-11-27 03:13:45.177345"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"84"}
+  [1m[36mExampleInput Load (0.8ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 2.4ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.8ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (6.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:18:22.080870"], ["updated_at", "2017-11-27 03:18:22.080870"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[36mExampleInput Load (0.7ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:21:23.604398"], ["updated_at", "2017-11-27 03:21:23.604398"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 1.7ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:25:12.955785"], ["updated_at", "2017-11-27 03:25:12.955785"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"87"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:25:34.865234"], ["updated_at", "2017-11-27 03:25:34.865234"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mExampleInput Load (0.7ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:27:36.651946"], ["updated_at", "2017-11-27 03:27:36.651946"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 1.6ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:28:11.360371"], ["updated_at", "2017-11-27 03:28:11.360371"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:28:56.609927"], ["updated_at", "2017-11-27 03:28:56.609927"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.5ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:29:15.025755"], ["updated_at", "2017-11-27 03:29:15.025755"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:46:31.614061"], ["updated_at", "2017-11-27 03:46:31.614061"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:49:43.392383"], ["updated_at", "2017-11-27 03:49:43.392383"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"94"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 03:53:20.644199"], ["updated_at", "2017-11-27 03:53:20.644199"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mExampleInput Load (1.1ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 2.4ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36mRevenue Load (38.5ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (0.8ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (0.7ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 04:01:10.455097"], ["updated_at", "2017-11-27 04:01:10.455097"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[36mRevenue Load (1.1ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (0.6ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (0.6ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 04:05:16.313788"], ["updated_at", "2017-11-27 04:05:16.313788"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mExampleInput Load (0.8ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.4ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 04:07:09.160263"], ["updated_at", "2017-11-27 04:07:09.160263"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[36mExampleInput Load (0.5ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[36mRevenue Load (1.1ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (0.6ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRevenue Load (1.9ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.7ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 04:08:01.333712"], ["updated_at", "2017-11-27 04:08:01.333712"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mExampleInput Load (0.7ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Processing by ExampleInputsController#index as HTML
+  Rendering example_inputs/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/index.html.erb within layouts/application (0.6ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "example_inputs" ("purchasername", "itemdescription", "itemprice", "purchasecount", "merchantaddress", "merchantname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["purchasername", "Snake Plissken"], ["itemdescription", "R$35 Sneakers for R$3"], ["itemprice", 3.0], ["purchasecount", 4], ["merchantaddress", "171 Fake St"], ["merchantname", "Sneaker Store Emporium"], ["created_at", "2017-11-27 04:18:01.954529"], ["updated_at", "2017-11-27 04:18:01.954529"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by ExampleInputsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mExampleInput Load (0.6ms)[0m  [1m[34mSELECT  "example_inputs".* FROM "example_inputs" WHERE "example_inputs"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  Rendering example_inputs/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered example_inputs/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by RevenuesController#index as HTML
+  Rendering revenues/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "revenues" ("name", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test.csv"], ["value", 0.0], ["created_at", "2017-11-27 04:18:02.047094"], ["updated_at", "2017-11-27 04:18:02.047094"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by RevenuesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRevenue Load (0.5ms)[0m  [1m[34mSELECT  "revenues".* FROM "revenues" WHERE "revenues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering revenues/show.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered revenues/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
